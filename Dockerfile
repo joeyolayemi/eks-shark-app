@@ -45,5 +45,9 @@ COPY --chown=node:node . .
 
 EXPOSE 8080
 
+# Ensure wait-for.sh has execution permissions
+USER root
+RUN chmod +x /home/node/app/wait-for.sh
+
 ENTRYPOINT ["/home/node/app/wait-for.sh", "db:27017", "--"]
 CMD [ "node", "app.js" ]
