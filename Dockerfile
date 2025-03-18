@@ -49,5 +49,7 @@ EXPOSE 8080
 USER root
 RUN chmod +x /home/node/app/wait-for.sh
 
+USER node
+
 ENTRYPOINT ["/home/node/app/wait-for.sh", "db:27017", "--"]
 CMD [ "node", "app.js" ]
