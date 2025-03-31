@@ -1,9 +1,5 @@
-Project code for tutorial on integrating MongoDB into Node.js application using Mongoose: https://www.digitalocean.com/community/tutorials/how-to-integrate-mongodb-with-your-node-application
+## EKS Deployment
 
-tutorial to convert to k8s yaml
-https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes
-
-*Deployment*
 kubectl apply -f db-deployment.yaml \
   -f db-env-configmap.yaml \
   -f db-service.yaml \
@@ -19,3 +15,9 @@ kubectl apply -f db-deployment.yaml \
   -f nodejs-service.yaml \
   -f pv.yaml \
   -f secret.yaml
+
+### Reference
+Project code for tutorial on integrating MongoDB into Node.js application using Mongoose: https://www.digitalocean.com/community/tutorials/how-to-integrate-mongodb-with-your-node-application
+
+tutorial to convert to k8s yaml
+https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes
