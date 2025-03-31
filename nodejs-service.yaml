@@ -9,7 +9,7 @@ metadata:
     io.kompose.service: nodejs
   name: nodejs
 spec:
-  type: NodePort                #LoadBalancer
+  type: LoadBalancer                #LoadBalancer
   ports:
   - name: "80"
     port: 80
